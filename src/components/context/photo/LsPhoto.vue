@@ -1,6 +1,6 @@
 <template>
   <div class="ls-photo">
-    <van-image v-for="item in size" :key="item" :src="imgs + item" alt="">
+    <van-image v-for="item in size" :key="item" :src="imgs + item"  alt="">
       <template v-slot:loading>
         <van-loading type="spinner" size="20" />
       </template>
@@ -9,6 +9,7 @@
 </template>
 
 <script>
+
 export default {
   props: {
     imgs: {
